@@ -6,6 +6,9 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 	
 <context:annotation-config/>
+<!-- 
+		bean的三种设置方式
+ -->
 <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
 		destroy-method="close" >
 		<property name="driverClassName" value="org.mariadb.jdbc.Driver" />

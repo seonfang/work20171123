@@ -2,22 +2,12 @@ package springbootTest;
 
 import java.io.Serializable;
 
-import javax.inject.Inject;
 import javax.sql.DataSource;
 
-import org.springframework.beans.factory.annotation.Autowired;
-/**
- * 属性注入创建bean
- * @author seon
- *
- */
-public class XmlBean implements Serializable {
-	private static final long serialVersionUID = 8362128795381429935L;
+public class AnnotationBean implements Serializable {
+	private static final long serialVersionUID = 2331561675143098250L;
 	private Integer p1;
 	private String p2;
-
-		@Autowired
-		//@Inject
 	private DataSource dataSource;
 
 	public Integer getP1() {
@@ -46,8 +36,8 @@ public class XmlBean implements Serializable {
 
 	@Override
 	public String toString() {
-		return "XmlBean [p1=" + p1 + ", p2=" + p2 + ", dataSource=" + dataSource
-				+ "]";
+		return "AnnotationBean [p1=" + p1 + ", p2=" + p2 + ", dataSource="
+				+ dataSource + "]";
 	}
 
 

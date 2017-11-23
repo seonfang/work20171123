@@ -1,7 +1,11 @@
 package springbootTest;
 
 import java.io.Serializable;
-
+/**
+ * 使用构造方法生成bean
+ * @author seon
+ *
+ */
 public class XmlBean2 implements Serializable {
 
 	private static final long serialVersionUID = 8892889680261721690L;
